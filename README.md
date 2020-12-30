@@ -7,4 +7,4 @@ I made this application in kotlin to practice, it is an application that generat
 ## Requirements
 * Android Studio
 * Kotlin
-* API 25 or higher
+* API 27 or higher
