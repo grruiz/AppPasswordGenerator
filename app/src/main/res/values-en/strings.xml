@@ -15,4 +15,6 @@
     <string name="no_segura">Not entirely safe</string>
     <string name="password_segura">Secure password"</string>
     <string name="password_asegura">The password is very secure</string>
+    <string name="logo_of_application">Logo of Application</string>
+    <string name="password">Password</string>
 </resources>
