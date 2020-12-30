@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PasswordGenerator</string>
+    <string name="refrescar">Refrescar</string>
+    <string name="s_mbolos_por_ejemplo">Símbolos (por ejemplo, {:)</string>
+    <string name="d_gitos_por_ejemplo_123">Dígitos (por ejemplo, 123)</string>
+    <string name="letras_por_ejemplo_abc">Letras (por ejemplo, ABC)</string>
+    <string name="se_puede_mejorar">Se puede mejorar</string>
+    <string name="generator">GENERATOR</string>
+    <string name="copiar">Copiar</string>
+    <string name="_4">4</string>
+    <string name="_40">40</string>
+    <string name="longitud">Longitud (8)</string>
+    <string name="aun_mejorar">Aún se puede mejorar</string>
+    <string name="no_segura">No es del todo segura</string>
+    <string name="password_segura">Contraseña segura</string>
+    <string name="password_asegura">Esta contraseña es muy segura</string>
+</resources>

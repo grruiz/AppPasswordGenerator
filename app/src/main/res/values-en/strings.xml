@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PasswordGenerator</string>
+    <string name="refrescar">Refresh</string>
+    <string name="s_mbolos_por_ejemplo">Characters (for example, {:-)</string>
+    <string name="d_gitos_por_ejemplo_123">Numbers (for example, 123)</string>
+    <string name="letras_por_ejemplo_abc">Letters (for example, ABC)</string>
+    <string name="se_puede_mejorar">It can be improved</string>
+    <string name="generator">GENERATOR</string>
+    <string name="copiar">Copy</string>
+    <string name="_4">4</string>
+    <string name="_40">40</string>
+    <string name="longitud">Length (8)</string>
+    <string name="aun_mejorar">It can still be improved</string>
+    <string name="no_segura">Not entirely safe</string>
+    <string name="password_segura">Secure password"</string>
+    <string name="password_asegura">The password is very secure</string>
+</resources>
