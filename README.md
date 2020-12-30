@@ -15,6 +15,6 @@ I made this application in kotlin to practice, it is an application that generat
 
 <br />
 <p align="center">
-<img src="https://github.com/grruiz/AppPasswordGenerator/blob/master/Screenshot.jpg" alt="Screenshot Application" width="450" height="900" />
+  <img src="https://github.com/grruiz/AppPasswordGenerator/blob/master/Screenshot.jpg" alt="Screenshot Application" width="450" height="900" />
 </p>
 <br />
