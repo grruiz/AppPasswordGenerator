@@ -8,3 +8,10 @@ I made this application in kotlin to practice, it is an application that generat
 * Android Studio
 * Kotlin
 * API 27 or higher
+
+## Attribution
+<div>Icons designed by <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+
+<br />
+<img src="https://github.com/grruiz/AppPasswordGenerator/blob/master/Screenshot.jpg" alt="Screenshot Application" width="450" height="900"/>
+<br />
