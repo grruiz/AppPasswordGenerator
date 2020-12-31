@@ -5,14 +5,11 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.CheckBox
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds;
 import com.rafaelgalvezruiz.passwordgenerator.databinding.ActivityMainBinding
 
 
@@ -23,27 +20,12 @@ class MainActivity : AppCompatActivity() {
     private val passwordGenerator = PasswordGenerator()
     private lateinit var password: String
     private lateinit var binding: ActivityMainBinding
-    private lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //ADMOD
-        MobileAds.initialize(this) {
-
-        }
-
-        val adView = AdView(this)
-        adView.adSize = AdSize.BANNER
-        adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
-
-        mAdView = findViewById(R.id.adView)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
 
         generatePassword(4, binding)
 
@@ -65,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             generatePassword(binding.etPassword.text.length, binding)
         }
         //Controller Checkbox
-        checkCheckbox(binding)
+        clickCheckBox(binding)
 
     }
 
@@ -129,41 +111,28 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkCheckbox(binding: ActivityMainBinding) {
+    private fun clickCheckBox(binding: ActivityMainBinding) {
+
         binding.cbDigitos.setOnClickListener {
-            if(binding.cbDigitos.isChecked){
-                binding.cbLetras.isEnabled = true
-                binding.cbSimbolos.isEnabled = true
-            }else{
-                if(!binding.cbLetras.isChecked && binding.cbSimbolos.isChecked){
-                    binding.cbSimbolos.isEnabled = false
-                }else if(binding.cbLetras.isChecked && !binding.cbSimbolos.isChecked){
-                    binding.cbLetras.isEnabled = false
-                }
-            }
+            checkCheckbox(binding.cbDigitos,binding.cbLetras,binding.cbSimbolos)
         }
         binding.cbLetras.setOnClickListener {
-            if(binding.cbLetras.isChecked){
-                binding.cbDigitos.isEnabled = true
-                binding.cbSimbolos.isEnabled = true
-            }else{
-                if(!binding.cbDigitos.isChecked && binding.cbSimbolos.isChecked){
-                    binding.cbSimbolos.isEnabled = false
-                }else if(binding.cbDigitos.isChecked && !binding.cbSimbolos.isChecked){
-                    binding.cbDigitos.isEnabled = false
-                }
-            }
+            checkCheckbox(binding.cbLetras,binding.cbDigitos,binding.cbSimbolos)
         }
         binding.cbSimbolos.setOnClickListener {
-            if(binding.cbSimbolos.isChecked){
-                binding.cbLetras.isEnabled = true
-                binding.cbDigitos.isEnabled = true
-            }else{
-                if(!binding.cbLetras.isChecked && binding.cbDigitos.isChecked){
-                    binding.cbDigitos.isEnabled = false
-                }else if(binding.cbLetras.isChecked && !binding.cbDigitos.isChecked){
-                    binding.cbLetras.isEnabled = false
-                }
+            checkCheckbox(binding.cbSimbolos,binding.cbLetras,binding.cbDigitos)
+        }
+    }
+
+    private fun checkCheckbox(cb1:CheckBox, cb2:CheckBox, cb3:CheckBox){
+        if(cb1.isChecked){
+            cb2.isEnabled = true
+            cb3.isEnabled = true
+        }else{
+            if(!cb2.isChecked && cb3.isChecked){
+                cb3.isEnabled = false
+            }else if(cb2.isChecked && !cb3.isChecked){
+                cb2.isEnabled = false
             }
         }
     }
