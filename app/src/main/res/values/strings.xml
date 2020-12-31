@@ -9,12 +9,13 @@
     <string name="copiar">Copiar</string>
     <string name="_4">4</string>
     <string name="_40">40</string>
-    <string name="longitud">Longitud (8)</string>
+    <string name="longitud">Longitud</string>
     <string name="aun_mejorar">Aún se puede mejorar</string>
     <string name="no_segura">No es del todo segura</string>
     <string name="password_segura">Contraseña segura</string>
     <string name="password_asegura">Esta contraseña es muy segura</string>
-    <string name="pglm">PGLM</string>
+    <string name="pglm" translatable="false">PGLM</string>
     <string name="logo_of_application">Logo of Application</string>
     <string name="password">Password</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4228286245501752/6626202079</string>
 </resources>

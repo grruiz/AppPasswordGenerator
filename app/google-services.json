@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860840554953",
+    "project_id": "passwordgenerator-3feec",
+    "storage_bucket": "passwordgenerator-3feec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860840554953:android:7a61a435d65dfd62ad7818",
+        "android_client_info": {
+          "package_name": "com.rafaelgalvezruiz.passwordgenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860840554953-r6ra6nmhk80hofht213bid622mefe6qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbxaV-ia1XQX01h_EsDr2erLNM011EGXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860840554953-r6ra6nmhk80hofht213bid622mefe6qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

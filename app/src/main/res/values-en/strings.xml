@@ -10,11 +10,12 @@
     <string name="copiar">Copy</string>
     <string name="_4">4</string>
     <string name="_40">40</string>
-    <string name="longitud">Length (8)</string>
+    <string name="longitud">Length</string>
     <string name="aun_mejorar">It can still be improved</string>
     <string name="no_segura">Not entirely safe</string>
     <string name="password_segura">Secure password"</string>
     <string name="password_asegura">The password is very secure</string>
     <string name="logo_of_application">Logo of Application</string>
     <string name="password">Password</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4228286245501752/6626202079</string>
 </resources>
